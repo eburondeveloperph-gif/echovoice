@@ -1,0 +1,8 @@
+.env
+.env.*
+data/
+backend/.venv/
+backend/__pycache__/
+backend/.pytest_cache/
+ui/node_modules/
+.git/

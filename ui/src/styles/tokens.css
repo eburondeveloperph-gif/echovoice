@@ -1,0 +1,39 @@
+:root {
+  --font-heading: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+
+  --bg-1: #040604;
+  --bg-2: #080b08;
+  --bg-3: #0d120d;
+
+  --text-primary: #e9ffe3;
+  --text-secondary: #95af8d;
+
+  --accent: #b8ff3b;
+  --accent-strong: #9cf822;
+  --accent-soft: rgba(184, 255, 59, 0.2);
+
+  --glass-bg: rgba(8, 14, 8, 0.62);
+  --glass-border: rgba(184, 255, 59, 0.24);
+  --glass-shadow: 0 14px 36px rgba(0, 0, 0, 0.45);
+
+  --radius-xl: 20px;
+  --radius-md: 12px;
+}
+
+[data-theme="light"] {
+  --bg-1: #f7fff1;
+  --bg-2: #ecf8e3;
+  --bg-3: #e1f2d7;
+
+  --text-primary: #101a0a;
+  --text-secondary: #4f6744;
+
+  --accent: #2f8f00;
+  --accent-strong: #2a8100;
+  --accent-soft: rgba(47, 143, 0, 0.18);
+
+  --glass-bg: rgba(255, 255, 255, 0.62);
+  --glass-border: rgba(47, 143, 0, 0.24);
+  --glass-shadow: 0 14px 34px rgba(41, 66, 31, 0.18);
+}

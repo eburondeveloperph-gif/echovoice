@@ -1,0 +1,19 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "cd ui && npm ci",
+  "buildCommand": "cd ui && npm run build",
+  "outputDirectory": "ui/dist",
+  "functions": {
+    "api/index.py": {
+      "maxDuration": 30
+    }
+  },
+  "rewrites": [
+    { "source": "/health", "destination": "/api/index.py" },
+    { "source": "/metrics", "destination": "/api/index.py" },
+    { "source": "/v1/(.*)", "destination": "/api/index.py" },
+    { "source": "/files/(.*)", "destination": "/api/index.py" },
+    { "source": "/api/(.*)", "destination": "/api/index.py" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
