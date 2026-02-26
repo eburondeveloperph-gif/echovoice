@@ -1,6 +1,7 @@
 .env
 .env.*
 data/
+echovoice/
 backend/.venv/
 backend/__pycache__/
 backend/.pytest_cache/
